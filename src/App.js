@@ -15,7 +15,8 @@ import ProjectDetails from "./components/ProjectDetails";
 
 
 const Body = styled.div`
-  background-color: ${({ theme }) => theme.bg};
+  // background-color: black;
+  background: linear-gradient(to right bottom, #000000, #1b1a1b, #2e2e2f, #424344, #585a5a);
   width: 100%;
   height: 100%;
   overflow-x: hidden;
@@ -23,7 +24,7 @@ const Body = styled.div`
 
 
 const Wrapper = styled.div`
-  background: linear-gradient(38.73deg, rgba(204, 0, 187, 0.15) 0%, rgba(201, 32, 184, 0) 50%), linear-gradient(141.27deg, rgba(0, 70, 209, 0) 50%, rgba(0, 70, 209, 0.15) 100%);
+  background: linear-gradient(38.73deg, rgba(102, 252, 241, 0.15) 0%, rgba(102, 252, 241, 0) 50%), linear-gradient(141.27deg, rgba(102, 252, 241, 0) 50%, rgba(102, 252, 241, 0.15) 100%);
   width: 100%;
   clip-path: polygon(0 0, 100% 0, 100% 100%,30% 98%, 0 100%);
 `

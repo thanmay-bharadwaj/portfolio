@@ -15,10 +15,10 @@ const Button = styled.button`
     cursor: pointer;
     transition: all 0.8s ease-in-out;
 `
-const Card = styled.div`
+const Card= styled.div`
     width: 330px;
-    height: 490px;
-    background-color: ${({ theme }) => theme.card};
+    height: 250px;
+    background-image: linear-gradient(to left top, #000000, #0b0b0b, #131313, #191919, #1f1f1f);
     cursor: pointer;
     border-radius: 10px;
     box-shadow: 0 0 12px 4px rgba(0,0,0,0.4);
@@ -36,6 +36,7 @@ const Card = styled.div`
     &:hover ${Button} {
         display: block;
     }
+
 `
 
 const Image = styled.img`
@@ -58,8 +59,8 @@ const Tags = styled.div`
 const Tag = styled.span`
     font-size: 12px;
     font-weight: 400;
-    color: ${({ theme }) => theme.primary};
-    background-color: ${({ theme }) => theme.primary + 15};
+    color: #69ece3;
+    background-color: ${"#69ece3"+ 15};
     padding: 2px 8px;
     border-radius: 10px;
 `
@@ -125,9 +126,6 @@ const Avatar = styled.img`
 const ProjectCards = ({project,setOpenModal}) => {
     return (
         <Card onClick={() => setOpenModal({state: true, project: project})}>
-            {/* <Image src={project.id=="3".image}/> */}
-            {/* <Image src= {project.category=="android app".image}/> */}
-            {/* <Image src= {project.category=="web app".image}/> */}
             <Tags>
                 {project.tags?.map((tag, index) => (
                 <Tag>{tag}</Tag>

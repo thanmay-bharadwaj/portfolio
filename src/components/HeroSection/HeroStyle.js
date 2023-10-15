@@ -100,11 +100,7 @@ export const Img = styled.img`
   max-width: 400px;
   max-height: 400px;
   border-radius: 50%;
-  border: 2px solid ${({ theme }) => theme.primary};
-  // border: 2px solid transparent;
-  // border-image-radius: 50% linear-gradient(to left top, #2c333b, #315364, #237789, #009ca5, #00c3b4);
-  // border-image-slice: 1;
-
+  border: 2px solid #69ece3;
   @media (max-width: 768px) {
     max-width: 400px;
     max-height: 400px;

@@ -28,7 +28,11 @@ const FooterWrapper = styled.footer`
 const Logo = styled.h1`
   font-weight: 600;
   font-size: 20px;
-  color: ${({ theme }) => theme.primary};
+  // background-image: linear-gradient(to left top, #2c333b, #315364, #237789, #009ca5, #00c3b4);
+  background: linear-gradient(to left top, #2c333b, #315364, #237789, #009ca5, #00c3b4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 `;
 
 const Nav = styled.nav`
@@ -53,8 +57,10 @@ color: ${({ theme }) => theme.text_primary};
   text-decoration: none;
   font-size: 1.2rem;
   transition: color 0.2s ease-in-out;
-  &:hover {
-    color: ${({ theme }) => theme.primary};
+  :hover {
+    background: linear-gradient(to left top, #2c333b, #315364, #237789, #009ca5, #00c3b4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   @media (max-width: 768px) {
     font-size: 1rem;
@@ -73,7 +79,10 @@ const SocialMediaIcon = styled.a`
   color: ${({ theme }) => theme.text_primary};
   transition: color 0.2s ease-in-out;
   &:hover {
-    color: ${({ theme }) => theme.primary};
+    color:#69ece3;  
+    // background: linear-gradient(to left top, #2c333b, #315364, #237789, #009ca5, #00c3b4);
+    // -webkit-background-clip: image;
+    // -webkit-text-fill-color: transparent;
   }
 `;
 

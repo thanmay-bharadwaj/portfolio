@@ -13,7 +13,7 @@ export const Nav = styled.div`
     top: 0;
     z-index: 10;
     @media (max-width: 960px) {
-        trastion: 0.8s all ease;
+        transition: 0.8s all ease;
     }
 `;
 export const NavbarContainer = styled.div`
@@ -23,21 +23,11 @@ export const NavbarContainer = styled.div`
   height: 60px;
   z-index: 1;
   width: 100%;
-  padding: 0 24px;
+  // padding: 0 24px;
   max-width: 1200px;
 `;
 
-export const NavLogo = styled(LinkR)`
-    width: 80%;    
-    padding: 0 6px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    text-decoration: none;
-    @media (max-width: 640px) {
-      padding: 0 0px;
-  }
-`;
+
 export const Span = styled.div`
     padding: 0 4px;
     font-weight: bold;
@@ -64,14 +54,15 @@ export const NavLink = styled.a`
     transition: all 0.2s ease-in-out;
     text-decoration: none;
     :hover {
-      color: ${({ theme }) => theme.primary};
+      background: linear-gradient(to left top, #2c333b, #315364, #237789, #009ca5, #00c3b4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     &.active {
       border-bottom: 2px solid ${({ theme }) => theme.primary};
     }
 `;
-
 
 export const GitHubButton = styled.a`
   // border: 1.8px solid;
