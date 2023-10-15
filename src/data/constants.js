@@ -10,7 +10,7 @@ export const Bio = {
       "I'm an enthusiastic and adaptable individual who thrives on tackling fresh challenges. Driven by a love for learning, I'm committed to producing top-notch outcomes, armed with a constructive outlook and a determination for significant contributions and accomplishments.",
     github: "https://github.com/thanmay-bharadwaj",
     resume:
-      " ",
+      "https://drive.google.com/file/d/1t7MtbJhrgRWWs7q9_FcrHm3hIiNcrcpn/view?usp=sharing",
     linkedin: "https://www.linkedin.com/in/thanmay-bharadwaj-j-s/",
     mail: "mailto:thanmaybharadwaj.js@gmail.com",
     insta: "https://www.instagram.com/thanmay_bharadwaj",
