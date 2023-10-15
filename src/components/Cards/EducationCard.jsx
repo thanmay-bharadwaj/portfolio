@@ -36,8 +36,9 @@ text-overflow: ellipsis;
 const Card = styled.div`
     width: 650px;
     border-radius: 10px;
+    background-image: linear-gradient(to left top, #000000, #0b0b0b, #131313, #191919, #1f1f1f);
     box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
-    padding: 12px 16px;
+    padding: 18px 16px;
     justify-content: space-between;
     position: relative;
     overflow: hidden;
@@ -50,7 +51,7 @@ const Card = styled.div`
         transform: translateY(-5px);
     }
     @media only screen and (max-width: 768px){
-        padding: 10px;
+        padding: 16px;
         gap: 8px;
         width: 300px;
     }
